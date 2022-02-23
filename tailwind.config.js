@@ -8,7 +8,8 @@ module.exports = {
       'xl': '1280px',
     },
     container: {
-      padding: '1rem'
+      padding: '1rem',
+      center: true
     },
     extend: {
 
