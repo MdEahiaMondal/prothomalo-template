@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="/dist/tailwind.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="max-w-lg h-screen mx-auto">
+        <div class="w-full shadow-md border border-gray-300 p-3 mt-5">
+            <div class="flex flex-row cursor-pointer" id="go-back">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                </svg>
+                <span>Back</span>
+            </div>
+            <div class="flex flex-col justify-center items-center px-10 space-y-5">
+                <img src="../../assets//images//logo-small.svg" class="w-40" alt="">
+                <span class="text-xl text-blue-500 font-bold">Create an account</span>
+                <p>to continue to
+                    <b>Prothom Alo English</b>
+                </p>
+                <button
+                    class="w-full bg-[#3b5998] py-1.5 px-1 rounded-sm text-white text-xl flex flex-row justify-start items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" class="facebook-icon">
+                        <g data-name="Group 3683" transform="translate(-451 -410)">
+                            <circle cx="14" cy="14" r="14" data-name="Ellipse 3" transform="translate(451 410)"
+                                fill="#eee">
+                            </circle>
+                            <path
+                                d="M468.01 424.875l.389-2.534h-2.434V420.7a1.267 1.267 0 011.428-1.369h1.105v-2.16a13.478 13.478 0 00-1.962-.171 3.093 3.093 0 00-3.311 3.41v1.931H461v2.534h2.226V431h2.739v-6.125z"
+                                data-name="Path 182" fill="#121212"></path>
+                        </g>
+                    </svg>
+                    <span class="mx-auto">With Facebook</span>
+                </button>
+                <button
+                    class="w-full bg-[#4285f4] py-1.5 px-1 rounded-sm text-white text-xl flex flex-row justify-start items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" class="twitter">
+                        <g data-name="Group 4660" transform="translate(-484 -1238)">
+                            <circle cx="14" cy="14" r="14" data-name="Ellipse 3" transform="translate(484 1238)"
+                                fill="#eee"></circle>
+                            <g data-name="Group 4650">
+                                <g data-name="Group 583">
+                                    <path
+                                        d="M505.695 1247.173a6.631 6.631 0 01-1.833.5 3.163 3.163 0 001.4-1.758 6.356 6.356 0 01-2.017.77 3.18 3.18 0 00-5.5 2.175 3.275 3.275 0 00.074.725 9 9 0 01-6.558-3.324 3.181 3.181 0 00.977 4.251 3.141 3.141 0 01-1.437-.392v.035a3.2 3.2 0 002.549 3.126 3.174 3.174 0 01-.834.1 2.812 2.812 0 01-.6-.054 3.211 3.211 0 002.965 2.219 6.39 6.39 0 01-3.939 1.356 5.958 5.958 0 01-.761-.043 8.954 8.954 0 004.879 1.422 8.99 8.99 0 009.052-9.05c0-.141 0-.276-.012-.411a6.345 6.345 0 001.595-1.647z"
+                                        data-name="Path 15" fill="#222"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                    <span class="mx-auto">With Google</span>
+                </button>
+                <div>or</div>
+                <div class="w-full">
+                    <input type="text" placeholder="Full Name"
+                        class="py-2 w-full border-2 border-gray-300 rounded-md px-3 outline-none">
+                </div>
+                <div class="w-full">
+                    <input type="text" placeholder="Email"
+                        class="py-2 w-full border-2 border-gray-300 rounded-md px-3 outline-none">
+                </div>
+                <div class="w-full relative">
+                    <input type="password" id="password" placeholder="Password"
+                        class="py-2 w-full border-2 border-gray-300 rounded-md px-3 outline-none">
+                    <span class="text-blue-500 absolute top-1.5  right-3 bg-white py-1 cursor-pointer"
+                        onclick="showPassword()">Show</span>
+                </div>
+                <div class="w-full relative">
+                    <input type="password" id="password" placeholder="Confirm Password"
+                        class="py-2 w-full border-2 border-gray-300 rounded-md px-3 outline-none">
+                    <span class="text-blue-500 absolute top-1.5  right-3 bg-white py-1 cursor-pointer"
+                        onclick="showPassword()">Show</span>
+                </div>
+                <div class="w-full">
+                    <span>Use atleast 8 charcaters, mix of numbers & letters</span>
+                </div>
+                <button
+                    class="w-full py-2 rounded-sm bg-[#d60000] uppercase text-xl font-bold text-white">Register</button>
+                <div class="w-full text-center">
+                    Already a member? <a href="#" class="text-[#d60000] hover:underline">Login</a>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="w-full px-10 mt-5">
+            <div class="w-full text-xs text-center">
+                By proceeding, you agree to <a href="#" class="text-blue-500 hover:underline">Terms of Use</a> and
+                <a href="#" class="text-blue-500 hover:underline">Privacy Policy</a> of Prothom Alo
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('go-back').addEventListener('click', () => {
+            history.back();
+        });
+        function showPassword() {
+            document.getElementById('password').setAttribute('type', 'text')
+        }
+    </script>
+</body>
+
+</html>
